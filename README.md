@@ -12,14 +12,14 @@ This project implements a system for matching players across different camera vi
 ## Setup
 
 1. Install dependencies:
-```bash
-pip install -r requirements.txt
-pip install ultralytics  # Required for YOLO model
-```
+    ```bash
+    pip install -r requirements.txt
+    pip install ultralytics  # Required for YOLO model
+    ```
 
 2. Make sure you have the following files:
-- `best.pt` (YOLO weights)
-- Your broadcast and tactical camera videos
+    - `best.pt` (YOLO weights)
+    - Your broadcast and tactical camera videos
 
 ## Interactive Jupyter Notebook
 
@@ -60,13 +60,15 @@ The script will generate:
 
 ```
 ├── src/
-│   ├── track_players.py    # Main script
-│   ├── detect.py          # Player detection module
-│   ├── feature_extractor.py # Feature extraction
-│   ├── matcher.py         # Player matching
-│   └── utils.py           # Utility functions
+│   ├── track_players.py        # Main script for player tracking and matching
+│   ├── detect.py               # Player detection module (YOLOv11)
+│   ├── feature_extractor.py    # Feature extraction (ResNet50)
+│   ├── matcher.py              # Player matching logic
+│   └── utils.py                # Utility functions
 ├── requirements.txt
-└── README.md
+├── player_tracking_complete.ipynb
+├── README.md
+└── (other files: best.pt, your .mp4 video files)
 ```
 
 ## Methodology
@@ -82,5 +84,3 @@ The script will generate:
 - Add real-time processing capabilities
 - Improve matching accuracy with pose estimation
 - Add support for more than two camera views
-"# Liat.ai-Assignment" 
-"# Liat.ai-Assignment" 
